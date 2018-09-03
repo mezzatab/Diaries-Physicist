@@ -41,14 +41,14 @@
 
 
 
-    {% include nav.html %}
+    {% include nav.html navclass='nav-top' %}
  </header>
 
  {{content}}
 
 
  <footer>
-  <p> {% include nav.html navclass='nav-bottom'%}</p>
+  {% include nav.html navclass='nav-bottom'%} 
   </footer>
     <hr>
     <address>

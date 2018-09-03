@@ -5,7 +5,22 @@ html {
 	font: normal 100%/1.4 Georgia,Serif;
 }
 
-.common {
+.current {
 	background-color: #000531;
 	color: #fff;
+}
+
+.nav-top {
+    font-size: 1.5rem;
+}
+
+.nav-bottom {
+    font-size: 1.2rem;
+}
+
+
+
+.nav > li {
+    display: inline-block;
+    padding-right: 20px;
 }
