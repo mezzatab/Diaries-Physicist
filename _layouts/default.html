@@ -5,19 +5,60 @@
   <meta charset="utf-8">
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet" >
 
 </head>
 
 <body>
 
 <header>
-    <h1>It is the beginning </h1>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title> {% if page.title %}{{page.title}} . {% endif %}Ahmad Zareei Webpage</title>
+    <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <table border=0><tr>
+        
+        <td>
+          <img src="{{site.baseurl}}/images/webImage.png" style="background-color:#FFFFFF;" alt="my picture" height=220     >
+        <td width=50>
+        <td>
+          <br><br>
+          <b><font size="8">Mohammadmehdi Ezzatabadipour</font></b><br>
+          <font size="4"> PhD Candidate, <br>
+          Theoritical and Applied Statistical Mechanics Lab., <br>
+          Physics, University of Houston, Houston<br></font>
+        </td>
+          
+      </tr>
+    </table>
+    <hr>
+
+
+
     {% include nav.html %}
  </header>
 
  {{content}}
+
+
+ <footer>
+  <p> {% include nav.html navclass='nav-bottom'%}</p>
+  </footer>
+    <hr>
+    <address>
+    3507 Cullen Blvd., Room 619b, University of Houston,     
+    Houston, TX 77204-5005,   
+      <!--
+      <a href="mailto:mehdi.ezatabadi3@gmail.com">mehdi.ezatabadi3@gmail.com</a> (prefered),
+      -->
+      <a href="mezzatab@central.uh.edu">mezzatab@central.uh.edu</a><br>
+    </address>  
 
 </body>
 </html>
